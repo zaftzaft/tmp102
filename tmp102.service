@@ -1,0 +1,9 @@
+[Unit]
+Description=tmp102
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/node /opt/tmp102.js
+
+[Install]
+WantedBy=default.target

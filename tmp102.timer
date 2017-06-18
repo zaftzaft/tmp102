@@ -1,0 +1,9 @@
+[Unit]
+Description=tmp102 timer
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=10sec
+
+[Install]
+WantedBy=timers.target
