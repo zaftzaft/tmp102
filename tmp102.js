@@ -24,5 +24,5 @@ try{
   //if(e.errno === -17) {}
 }
 
-fs.writeFileSync(`${filename}.$$`, `sensors_temp{addr="${addr}"} ${dec}\n`, "utf8");
+fs.writeFileSync(`${filename}.$$`, `sensors_temp{addr="${addr}"} ${dec}\nsensors_temp${addr}{addr="${addr}"} ${dec}\n`, "utf8");
 fs.renameSync(`${filename}.$$`, filename);
