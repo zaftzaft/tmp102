@@ -5,7 +5,7 @@ const fs   = require("fs");
 const path = require("path");
 
 let addr = process.argv[2] || "0x48";
-let filename = "/tmp/node_exporter/tmp102.prom";
+let filename = `/tmp/node_exporter/tmp102-${addr}.prom`;
 
 let val = ""+exec(`i2cget -y 1 ${addr} 0x00 w`);
 
