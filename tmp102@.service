@@ -1,9 +1,9 @@
 [Unit]
-Description=tmp102
+Description=tmp102 %i
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/node /opt/tmp102.js
+ExecStart=/usr/bin/node /opt/tmp102.js %i
 
 [Install]
 WantedBy=default.target

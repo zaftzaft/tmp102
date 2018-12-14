@@ -1,5 +1,5 @@
 [Unit]
-Description=tmp102 timer
+Description=tmp102 timer %i
 
 [Timer]
 OnBootSec=1min
